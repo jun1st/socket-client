@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4C58EB632359B0230034356E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C58EB622359B0230034356E /* main.c */; };
+		4C58EB6C2359B0480034356E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C58EB6B2359B0480034356E /* CFNetwork.framework */; };
+		4C58EB6E2359B0500034356E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C58EB6D2359B0500034356E /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		4C58EB5F2359B0230034356E /* socket client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "socket client"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C58EB622359B0230034356E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4C58EB6A2359B0310034356E /* liblog_SystemConfiguration.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = liblog_SystemConfiguration.tbd; path = usr/lib/log/liblog_SystemConfiguration.tbd; sourceTree = SDKROOT; };
+		4C58EB6B2359B0480034356E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4C58EB6D2359B0500034356E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C58EB6E2359B0500034356E /* SystemConfiguration.framework in Frameworks */,
+				4C58EB6C2359B0480034356E /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +50,7 @@
 			children = (
 				4C58EB612359B0230034356E /* socket client */,
 				4C58EB602359B0230034356E /* Products */,
+				4C58EB692359B0310034356E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +68,16 @@
 				4C58EB622359B0230034356E /* main.c */,
 			);
 			path = "socket client";
+			sourceTree = "<group>";
+		};
+		4C58EB692359B0310034356E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C58EB6D2359B0500034356E /* SystemConfiguration.framework */,
+				4C58EB6B2359B0480034356E /* CFNetwork.framework */,
+				4C58EB6A2359B0310034356E /* liblog_SystemConfiguration.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
